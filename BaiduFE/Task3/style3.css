@@ -1,0 +1,70 @@
+body{
+    width: auto;
+    height: 700px;
+    border:1px solid #999;
+    padding: 20px;
+}
+div{
+    border:1px solid #999;
+}
+.content{
+    background-color: #eee;
+    padding: 20px;
+    /*绝对位置布局，先最外层一个relative*/
+    /*position: relative;*/
+    /*自适应最高元素的高度*/
+    overflow: auto;
+}
+.middle{
+    background-color: white;
+    /*宽度这一条不用指定*/
+    /*width: auto;*/
+    /*Margin属性是从父类开始算的。*/
+    margin-left: 220px;
+    margin-right: 140px;
+    /*不需要指定float了*/
+    /*float: right;*/
+    padding-left: 20px;
+}
+.logo{
+    border: none;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+    float: left;
+    border:1px solid #999;
+}
+.left p{
+    float: left;
+    margin-top: 0px;
+    margin-left: 35px;
+    font-family: "Microsoft YaHei UI";
+
+}
+.left{
+    background-color: white;
+    width: 160px;
+    height: auto;
+    overflow: auto;
+    float:left;
+    /*绝对位置布局*/
+    /*position: absolute;*/
+    /*top: 20px;*/
+    /*left: 20px;*/
+    padding: 20px;
+}
+.right{
+    background-color: white;
+    width: 80px;
+    overflow: auto;
+    float:right;
+    /*绝对位置布局*/
+    /*position: absolute;*/
+    /*top: 20px;;*/
+    /*right: 20px;*/
+    padding: 20px;
+}
+.right img{
+    margin-bottom: 20px;
+}

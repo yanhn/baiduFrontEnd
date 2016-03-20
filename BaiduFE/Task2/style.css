@@ -1,0 +1,207 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    width: 1280px;
+}
+.header{
+    height: 60px;
+    background-color: #272727;
+}
+.header img{
+    margin-left: 40px;
+    height: 60px;
+    float:left;
+}
+.header ul{
+    float: right;
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+.headerul li{
+    font-size: 12px;
+    display: inline;
+    list-style-position: inside;
+}
+.header a:link{
+    color: seashell;
+    text-decoration: none;
+
+}
+.header a:visited{
+    color: gray;
+}
+.header a:hover{
+    color: white;
+}
+.header a:active{
+    color: skyblue;
+}
+/*文章一级标题*/
+h2{
+     margin-top: 15px;
+     margin-bottom: 15px;
+     font-family: "Microsoft YaHei UI";
+    font-size: 22px;
+    font-weight: 900;
+ }
+/*文章二级标题*/
+h3{
+     margin-top: 15px;
+     margin-bottom: 15px;
+     font-family: "Microsoft YaHei UI";
+     font-size: 16px;
+     font-weight: normal;
+ }
+/*作者信息*/
+.authorInfo p{
+    text-indent: 0em;
+    font-size: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.content{
+    background-color: lightgray;
+    width: 1280px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    /*padding: 20px;*/
+}
+.article{
+    background-color: white;
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 0px 1px darkgray;
+    padding: 20px;
+}
+/*第二个列表*/
+#list2{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 25px;
+    font-size: 16px;
+    list-style-type: none;
+}
+/*第三个列表*/
+#list3{
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+p{
+    /*开头空两个字符*/
+    font-size: 14px;
+    text-indent: 2em;
+    line-height: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/*相框*/
+.picFrame{
+    border: 1px solid #000000;
+    width: 105px;
+    padding: 10px;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.picFrame p{
+    text-indent: 0em;
+    font-size: 13px;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.picFrame img{
+    width: 105px;
+    margin-top: 10px;
+}
+.table1{
+    width: 100%;
+    font-size: 14px;
+    border-collapse:collapse;
+    border:none;
+}
+/*表头*/
+.table1 th{
+    text-align: left;
+    color:white;
+    font-size: 16px;
+    font-weight: 900;
+    background-color: black;
+    padding: 4px;
+}
+.table1 td{
+    padding: 4px;
+    border:1px solid darkgray;
+}
+/*最后一行*/
+.lastRow{
+    background-color: darkgray;
+    font-weight: 600;
+}
+.sidecolumn{
+    background-color: white;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 0px 1px darkgray;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.sidecolumn h2{
+    font-size: 16px;
+}
+.table2{
+    /*margin-bottom: 5px;*/
+    line-height: 25px;
+    margin-left: 260px;
+    font-size: 14px;
+}
+.col1{
+    text-align: right;
+    padding-right: 10px;
+    vertical-align: top;
+}
+.tips{
+    color: darkgray;
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+#btn{
+    height: 40px;
+    width: 1180px;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: royalblue;
+}
+/*尾部*/
+.footing{
+    height: 50px;
+    /*width: 100%;*/
+    background-color: black;
+    padding-top: 20px;
+    padding-left: 610px;
+}
+.footingCR{
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    float: left;
+}
+.copyright{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    float: left;
+}
