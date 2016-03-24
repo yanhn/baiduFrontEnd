@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Task5</title>
+    <link href="style5.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <h1><img src="Image/wow2.jpg"></h1>
+    <ul class="headerul">
+        <li><a href="#article1">导航链接一</a></li>
+        <li><a href="#article2">导航链接二</a></li>
+        <li><a href="#article3">导航链接三</a></li>
+        <li><a href="#sidecolumn">导航链接四</a></li>
+    </ul>
+</div>
+<div class="content">
+    <div class="sidecolumn">
+        <h2><a name="sidecolumn">这里以后是一个侧栏，这是侧栏的标题</a></h2>
+        <form>
+            <!--form需要action-->
+            <table class="table2">
+                <tr>
+                    <td class="col1">请输入邮箱地址</td>
+                    <td><input type="text" name="email" value="这是一个文本输入框" /></td>
+                </tr>
+                <tr>
+                    <td class="col1"></td>
+                    <td class="tips">邮箱地址请按要求格式输入</td>
+                </tr>
+                <tr>
+                    <td class="col1">请输入密码</td>
+                    <td><input type="password" name="psw" value="这是一个文本输入框" /></td>
+                </tr>
+                <tr>
+                    <td class="col1">请重复输入密码</td>
+                    <td><input type="password" name="psw" value="这是一个文本输入框" /></td>
+                </tr>
+                <tr>
+                    <td class="col1"></td>
+                    <td class="tips">密码请填写为6-16位数字或字母</td>
+                </tr>
+                <tr>
+                    <td class="col1">性别</td>
+                    <td>
+                        <input type="radio" name="Sex" value="男" checked="checked">男
+                        <input type="radio" name="Sex" value="女">女
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">城市</td>
+                    <td>
+                        <select name="city">
+                            <option value="chengdu">成都</option>
+                            <option value="qingdao">青岛</option>
+                            <option value="beijing" selected="selected">北京</option>
+                            <!--selected属性-->
+                            <option value="shuangyashan">双鸭山</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">爱好</td>
+                    <td>
+                        <!--多选框-->
+                        <input type="checkbox" name="hobbyies" value="sports" />运动
+                        <input type="checkbox" name="hobbyies" value="art" />艺术
+                        <input type="checkbox" name="hobbyies" value="science" />科学
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">个人描述</td>
+                    <td>
+                        <!--文本框输入-->
+                        <textarea rows="5" cols="25">这是一个多行输入框，输入您的个人描述</textarea>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <input type="button" value="确认提交" id="btn">
+    </div>
+    <div class="mainContet">
+        <div class="article">
+            <h2><a name="article1">文章一级标题</a></h2>
+            <h3>文章二级标题</h3>
+            <div class="authorInfo"><p>文章作者 文章发表时间</p></div>
+            <p>段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，换行啦。</br>
+                段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，换行啦。</br>
+                段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，<a href="http://bbs.byr.cn">有一个炒鸡链接连接到北邮人论坛http://bbs.byr.cn</a>段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，
+                段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方。</p>
+            <div class="picture">
+                <img src="Image/luthor.jpg">
+            </div>
+            <p>段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，<b>这里的字体相对偏胖</b>段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，换行啦。</br>
+                段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，
+                段落延伸去远方，段落延伸去远方，段落延伸去远方，<a href="http://bbs.byr.cn" target="_blank">有一个炒鸡链接新建一个窗口连接到北邮人论坛http://bbs.byr.cn</a>段落延伸去远方，段落延伸去远方，
+                段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方。</p>
+        </div>
+        <div class="article">
+            <h2><a name="article2">另一篇文章一级标题</a></h2>
+            <h3>文章二级标题</h3>
+            <div class="authorInfo"><p>文章作者 文章发表时间</p></div>
+            <p>段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，换行啦。</br>
+                段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，换行啦。</br>
+                段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，<a href="http://bbs.byr.cn">有一个炒鸡链接连接到北邮人论坛http://bbs.byr.cn</a>段落延伸去远方，段落延伸去远方，<b>这里的字体相对偏胖</b>段落延伸去远方，
+                段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方，段落延伸去远方。</p>
+            <div class="picture">
+                <img src="Image/luthor.jpg">
+            </div>
+            <ul id="list2">
+                <li>列表项目一</li>
+                <li>列表项目二</li>
+                <li>列表项目三</li>
+            </ul>
+        </div>
+        <div class="picArticle">
+            <h2>图片</h2>
+            <!--下面开始的图片没有向右的偏移？？*（&……*&%（*%%-->
+            <div class="picFrame">
+                <p>好看的图片</p>
+                <div class="picture">
+                    <img src="Image/luthor.jpg">
+                </div>
+            </div>
+            <div class="picFrame">
+                <p>好看的图片</p>
+                <div class="picture">
+                    <img src="Image/luthor.jpg">
+                </div>
+            </div>
+            <div class="picFrame">
+                <p>好看的图片</p>
+                <div class="picture">
+                    <img src="Image/luthor.jpg">
+                </div>
+            </div>
+            <div class="picFrame">
+                <p>好看的图片</p>
+                <div class="picture">
+                    <img src="Image/luthor.jpg">
+                </div>
+            </div>
+            <div class="picFrame">
+                <p>好看的图片</p>
+                <div class="picture">
+                    <img src="Image/luthor.jpg">
+                </div>
+            </div>
+            <div class="picFrame">
+                <p>好看的图片</p>
+                <div class="picture">
+                    <img src="Image/luthor.jpg">
+                </div>
+            </div>
+            <div class="picFrame">
+                <p>好看的图片</p>
+                <div class="picture">
+                    <img src="Image/luthor.jpg">
+                </div>
+            </div>
+            <div class="picFrame">
+                <p>好看的图片</p>
+                <div class="picture">
+                    <img src="Image/luthor.jpg">
+                </div>
+            </div>
+            <div class="picFrame">
+                <p>好看的图片</p>
+                <div class="picture">
+                    <img src="Image/luthor.jpg">
+                </div>
+            </div>
+            <div class="picFrame">
+                <p>好看的图片</p>
+                <div class="picture">
+                    <img src="Image/luthor.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <h2><a name="article3">最后一篇文章一级标题</a></h2>
+            <h3>文章二级标题</h3>
+            <div class="authorInfo"><p>文章作者 文章发表时间</p></div>
+            <ol id="list3">
+                <li>排名1</li>
+                <li>排名2</li>
+                <li>排名3</li>
+            </ol>
+            下面呢是一个表格，这个表格的border属性设置为2了。
+            <table border="2px" class="table1">
+                <tr>
+                    <th>表头</th>
+                    <th>表头</th>
+                    <th>表头</th>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td><a href="#article1">操作</a></td>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td><a href="#article1">操作</a></td>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td><a href="#article1">操作</a></td>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td><a href="#article1">操作</a></td>
+                </tr>
+                <tr class="lastRow">
+                    <td>总计</td>
+                    <td colspan="2">1000</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</div>
+<div class="footing">
+    <div class="footingCR">版权所有</div><div class="copyright">&copy;</div>
+</div>
+</body>
+</html>
