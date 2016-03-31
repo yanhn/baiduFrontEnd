@@ -1,0 +1,567 @@
+html{
+    min-width: 1280px;
+    background-color: snow;
+    display: flex;
+    justify-content: center;
+}
+body{
+    width: 1280px;
+}
+header{
+    background-color: white;
+    display: flex;
+    padding: 0px;
+    /*主轴上的对齐方式——水平*/
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin-left: 60px;
+    /*height: 37px;*/
+}
+nav{
+    margin-right: 60px;
+    display: flex;
+    /*height: 30px;*/
+    width: 550px;
+    background-color: white;
+    /*这两个啥区别。这个是轴线的对齐方式，如果只有一个轴，该句子不起作用。*/
+    /*align-content: center;*/
+    align-items: center;
+    font-family: "Microsoft YaHei UI Light";
+}
+nav span{
+    height: 48px;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid white;
+    color:#787b83;
+}
+nav span:hover{
+    border-bottom: 2px solid #e74f4d;
+    color:#e74f4d;
+}
+header .logo{
+    /*height: ;*/
+}
+.container{
+    background-color: white;
+}
+.flag{
+    /*position: relative;*/
+    background-image: url("img/flag.png");
+    width: 1280px;
+    height: 720px;
+    position: relative;
+}
+.flag h1{
+    font-family: "Microsoft YaHei UI Light";
+    color: white;
+    position: absolute;
+    font-size: 60px;
+    top:300px;
+    left:100px;
+    margin: 0px;
+}
+.flag p{
+    font-family: "Microsoft YaHei UI Light";
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    top:400px;
+    left:100px;
+    margin: 0px;
+}
+.flag button{
+    position: absolute;
+    top: 460px;
+    left: 100px;
+    background-color: #E74F4C;
+    color: white;
+    font-size: 1.4em;
+    margin-top: 40px;
+    width: 300px;
+    height: 50px;
+    border: none;
+}
+.slogan{
+    display: flex;
+    flex-wrap: wrap;
+}
+.slogan span{
+    width: 320px;
+    background-color: white;
+    /*margin: 60px;*/
+    /*这里解决了flex不能水平居中多行的问题*/
+    text-align: center;
+    font-size: 0.9em;
+    color:#787b83;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+span.sloganText{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.slogan span:nth-child(6),.slogan span:nth-child(7),.slogan span:nth-child(8){
+    width: 318px;
+    border-left: 2px solid #aaaaaa;
+}
+.midFlag{
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    font-family: "Microsoft YaHei UI Light";
+    color: #a1a1a1;
+    height: 200px;
+}
+.midFlag h1{
+    color: #A1A1A1;
+    font-size: 3em;
+    margin-top: 40px;
+}
+.select{
+    background: url("img/select.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+.select h3{
+    color: white;
+    font-size: 30px;
+    font-family: "Microsoft YaHei UI Light";
+    margin-bottom: 0;
+    /*margin-bottom: 5px;*/
+}
+.select p{
+    color: white;
+    font-size: 20px;
+    font-family: "Microsoft YaHei UI Light";
+    margin-top: 5px;
+}
+.select hr{
+    margin: 15px;
+    background-color: white;
+    width: 30px;
+    height: 3px;
+    border: none;
+}
+.select .selectDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+.select .selectDiv select{
+    margin-left: 30px;
+    width: 220px;
+    flex: 1 1 auto;
+    /*这句是把之前的样式去掉*/
+    -webkit-appearance: none;
+    background: url("img/button.png") no-repeat right #fff;
+}
+.select .selectDiv select:nth-of-type(1){
+    margin-left: 0;
+}
+.select .selectDiv button{
+    width: 220px;
+    flex: 1 1 auto;
+    background-color: #E74F4C;
+    color: white;
+    font-size: 20px;
+    /*这个命令不好，每个字符后面都加距离，导致最后也要多一块儿，不可控*/
+    /*letter-spacing: 20px;*/
+    height: 50px;
+    border: none;
+    margin-left: 30px;
+}
+/*display*/
+.display{
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f7f7f7;
+    flex-direction: row;
+}
+.display .frame{
+    padding: 5px;
+    background-color: white;
+    border: 1px solid #cecece;
+}
+.frameTop2Bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex:auto;
+}
+.frameBottom2Top{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    flex:auto;
+}
+.display p{
+    order: 1;
+    color: #9f9f9f;
+    font-family: "Microsoft YaHei UI Light";
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.frameTop2Bottom h3{
+    font-family: "Microsoft YaHei UI Light";
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.frameBottom2Top h3{
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    letter-spacing: 1.5em;
+    font-family: "Microsoft YaHei UI Light";
+    font-size: 1.3em;
+    order: 2;
+}
+/*slideFlag*/
+.slideFlag{
+    display: flex;
+    flex-flow: row;
+}
+#slideImg{
+    position: relative;
+    width: 800px;
+    height: 480px;
+    overflow: hidden;
+    /*height: 900px;*/
+    flex: 2 1 0;
+}
+#slideImg img{
+    width: 853px;
+    height: 480px;
+}
+#slideImg h2{
+    position: absolute;
+    top:50%;
+    left:50%;
+    color: #ffffff;
+    font-family: "Microsoft YaHei UI Light";
+}
+#slideImg h2:nth-of-type(1){
+    top: 30px;
+    left:340px;
+    font-size: 4em;
+}
+#slideImg h2:nth-of-type(2){
+    top: 20px;
+    left:270px;
+    font-size: 9em;
+}
+#slideImg h2:nth-of-type(3){
+    top: 300px;
+    left:390px;
+    font-size: 1em;
+}
+#slideImg h2:nth-of-type(4){
+    top: 340px;
+    left:390px;
+    font-size: 1em;
+}
+.slideFlag span.leftTriangle{
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 220px;
+    right: 0;
+    border-right: 30px solid transparent;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right-color: white;
+    border-left: 0;
+}
+.slideText{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    justify-content: center;
+    align-items: center;
+    height: 480px;
+}
+.slideText h2{
+    font-family: "Microsoft YaHei UI";
+    font-size: 1.6em;
+}
+.slideText p{
+    margin-left: 80px;
+    margin-right: 80px;
+    color: #929292;
+    line-height: 1.8em;
+}
+.slideText b{
+    color: red;
+}
+.slideText button{
+    background-color: white;
+    color: #E74F4C;
+    font-size: 1.2em;
+    margin-top: 25px;
+    width: 140px;
+    height: 35px;
+    border: 1px solid #E74F4C;
+}
+.slideText ul{
+    display: flex;
+    flex-direction: row;
+    /*要想把li中间分开，得用水平轴主轴上的justify-content，单用不行，得指定父类宽度之后才生效。*/
+    width: 80px;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+.slideText li{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #929292;
+}
+.slideText li:nth-of-type(1){
+    background-color: #929292;
+}
+.slideModule{
+    display: flex;
+}
+.slideModuleText{
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.slideModuleText:nth-of-type(1){
+    background-color: #E74F4C;
+}
+.slideModuleText:nth-of-type(1) div{
+    text-align: center;
+    color: white;
+    line-height: 1.6em;
+    font-family: "Microsoft YaHei UI Light";
+    font-size: 1.3em;
+}
+.slideModuleText:nth-of-type(1) hr{
+    margin-top: 20px;
+    background-color: white;
+    width: 30px;
+    height: 2px;
+    border: none;
+}
+.slideModuleText:nth-of-type(1) button{
+    background-color: #E74F4C;
+    color: white;
+    font-size: 1.4em;
+    margin-top: 40px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid white;
+}
+/*.slideModuleText:nth-of-type(2){*/
+    /*background-color: #E74F4C;*/
+/*}*/
+.slideModuleText:nth-of-type(2) div{
+    text-align: center;
+    color: black;
+    line-height: 1.6em;
+    font-family: "Microsoft YaHei UI Light";
+    font-size: 1.3em;
+}
+.slideModuleText:nth-of-type(2) hr{
+    margin-top: 20px;
+    background-color: black;
+    width: 30px;
+    height: 2px;
+    border: none;
+}
+.slideModuleText:nth-of-type(2) button{
+    background-color: white;
+    color: #E74F4C;
+    font-size: 1.4em;
+    margin-top: 40px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #E74F4C;
+}
+
+
+.slideModuleImg{
+    flex: 1 1 0;
+    position: relative;
+}
+.slideModuleImg span.rightTriangle{
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 220px;
+    left: 0;
+    border-left: 30px solid transparent;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left-color: white;
+    border-right: 0;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.form h3{
+    font-size: 1.8em;
+    margin-bottom: 2px;
+}
+.form hr{
+    /*实现下划线*/
+    width: 50px;
+    height: 2px;
+    background-color: red;
+    border: none;
+    margin-bottom: 25px;
+}
+.form div{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.formContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 120px;
+}
+.form .instruction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0;
+    margin-right: 30px;
+    margin-bottom: 0;
+}
+.instruction h4{
+    align-self: flex-start;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.instruction p{
+    margin: 5px;
+}
+.instruction button{
+    background-color: white;
+    align-self: flex-end;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.formContainer form{
+    /*表单*/
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #fff;
+    flex: 1 1 0;
+}
+/*.formContainer textarea{*/
+    /*border: none;*/
+    /*background-color: #EDEDEF;*/
+    /*width: 800px;*/
+/*}*/
+.formContainer form button{
+    border: none;
+    background-color: #EDEDEF;
+    width: 690px;
+    height: 60px;
+    margin-left: 15px;
+    margin-right: 20px;
+    font-size: 1.3em;
+    font-weight: 900;
+    padding: 0;
+}
+.formContainer form input{
+    border: none;
+    padding-left: 20px;
+    font-size: 0.9em;
+    height: 40px;
+    width: 310px;
+    margin: 15px;
+    margin-top: 0;
+    background-color: #EDEDEF;
+}
+.formContainer form input:nth-of-type(5){
+    background-color: #EDEDEF;
+    width: 670px;
+    height: 130px;
+    padding-top: 0;
+}
+
+.contact{
+    background-color: #32353E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #E4E7EB;
+    font-family: "Microsoft YaHei UI Light";
+    padding: 50px;
+}
+.contact h3{
+    margin: 0;
+    font-size: 1.5em;
+}
+.contact div{
+    text-align: center;
+    font-size: 0.8em;
+    line-height: 1.6em;
+    margin: 10px;
+}
+.contact span{
+    display: flex;
+    align-items: center;
+    margin: 25px;
+}
+.contact input{
+    width: 430px;
+    height: 33px;
+    font-size: 1em;
+    color: #E4E7EB;
+    border: none;
+}
+.contact #btn5{
+    background-color: #6E7178;
+    color: #F0F3F6;
+    font-family: "Microsoft YaHei UI Light";
+    font-size: 1em;
+    height: 35px;
+    width: 80px;
+    border: none;
+}
+footer{
+    background-color: black;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 20px;
+}
+footer div{
+    color: white;
+}
+
