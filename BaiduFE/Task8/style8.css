@@ -1,0 +1,72 @@
+body{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.container{
+    background-color: white;
+    padding-bottom: 200px;
+    width: 770px;
+    /*单独加overflow:auto没法消除浮动了，这里是靠body100%和container100%高度实现的。*/
+    height: 100%;
+}
+div{
+    margin-top: 20px;
+    background-color: #eee;
+    border: 1px solid #999;
+    height: 50px;
+    margin-left: 20px;
+}
+.col-md-4{
+    float: left;
+    width: 222px;
+}
+.col-md-1{
+    float: left;
+    width: 41px;
+}
+.col-md-2{
+    float: left;
+    width: 101px;
+}
+.col-md-3{
+    float: left;
+    width: 162px;
+}
+.col-md-6{
+    float: left;
+    width: 343px;
+}
+@media (max-width: 768px) {
+    /*这么写的好处是之前没限定media的那些CSS同样可以复用过来。*/
+    /*如果link那里给了@media限定条件，则会选择加载某个CSS文件，两个css必定有重复的部分。*/
+    .container{
+        width: 620px;
+    }
+    .col-md-4{
+        width: 278px;
+    }
+    .col-md-4:nth-of-type(3){
+        width: 578px;
+    }
+    .col-md-3{
+        width: 128px;
+    }
+    .col-md-6{
+        width: 278px;
+    }
+    .col-md-6:nth-of-type(11){
+        /*这个坑的意思是，找不到div了，虽然相同类名的只要第二个就行，实际上需要把div连起来算，所以就是第11个，base0*/
+        background-color: red;
+        width: 128px;
+    }
+    .col-md-1{
+        width: 78px;
+    }
+    .col-md-2{
+        width: 378px;
+    }
+    .col-md-2:nth-of-type(10){
+        width: 128px;
+    }
+}
