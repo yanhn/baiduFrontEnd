@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS task 8</title>
+    <script src="task21JS.js"></script>
+    <style>
+        #tagContainer{
+            padding: 10px 0;
+            display: flex;
+        }
+        #tagContainer div{
+            background-color: #88C9FF;
+            height: 30px;
+            margin-right: 6px;
+            border:1px solid #4D9DE8;
+            font-size: 20px;
+            font-family: "Microsoft YaHei UI";
+            padding: 0 10px;
+            color: white;
+            /*改变的时间这个属性不错*/
+            transition: background-color 0.2s;
+        }
+        #tagContainer div:hover{
+            background-color: red;
+            border:1px solid #900A0A;
+        }
+        #habbitContainer{
+            padding: 10px 0;
+            display: flex;
+        }
+        #habbitContainer div{
+            background-color: #FDC683;
+            height: 30px;
+            margin-right: 6px;
+            border:1px solid #E8982C;
+            font-size: 20px;
+            font-family: "Microsoft YaHei UI";
+            padding: 0 10px;
+            color: white;
+        }
+        #tagId:focus{
+            border: 3px solid #78B0EB;
+            box-shadow: 1px 1px 1px 1px snow;
+        }
+        button{
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            background-color: white;
+            box-shadow: 1px 1px 1px 1px;
+        }
+    </style>
+</head>
+<body>
+    <span>Tag</span>
+    <input type="text" id="tagId">
+    <br/>
+    <div id="tagContainer"></div>
+    <textarea cols="40" rows="5" id="habbitId"></textarea>
+    <br/>
+    <button id="btnId">确认添加爱好</button>
+    <div id="habbitContainer"></div>
+</body>
+</html>
