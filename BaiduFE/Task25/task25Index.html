@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Task 13</title>
+    <script src="task25JS.js"></script>
+    <style>
+        body{
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+        div{
+            display: flex;
+            flex-flow: column;
+            border: 1px solid black;
+            padding: 5px 10px 10px 10px;
+            flex:auto;
+            margin-top: 5px;
+            background-color: white;
+            position: relative;
+            transition: height 1.5s;
+        }
+        header{
+            width: 1000px;
+            display: flex;
+            justify-content: center;
+        }
+        button{
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            background-color: white;
+            box-shadow: 1px 1px 1px 1px;
+            margin: 0 20px;
+        }
+        span.row{
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            border: none;
+        }
+        .container{
+            width: 1000px;
+            height: auto;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+<body>
+<header>
+    <input type="text" id="textId"/>
+    <button id="btn">深度优先搜索</button>
+    <button id="btn3">删除</button>
+    <input type="text" id="textId2"/>
+    <button id="btn4">添加</button>
+</header>
+<div class="container">
+    <div class="first"><span class="row">Food<a href="#">收起</a></span>
+        <div class="second"><span class="row">Fruits<a href="#">收起</a></span>
+            <div class="third"><span class="row">Melon<a href="#">收起</a></span>
+                <div class="forth"><span class="row">WaterMelon<a href="#">收起</a></span></div>
+                <div class="forth"><span class="row">FireMelon<a href="#">收起</a></span></div>
+                <div class="forth"><span class="row">DirtMelon<a href="#">收起</a></span></div>
+                <div class="forth"><span class="row">GoldenMelon<a href="#">收起</a></span></div>
+            </div>
+            <div class="third"><span class="row">Apple<a href="#">收起</a></span></div>
+            <div class="third"><span class="row">得有个值啊<a href="#">收起</a></span>
+                <div class="forth"><span class="row">Pear<a href="#">收起</a></span></div>
+                <div class="forth"><span class="row">Peach<a href="#">收起</a></span></div>
+            </div>
+        </div>
+        <div class="second"><span class="row">Vegetables<a href="#">收起</a></span>
+            <div class="third"><span class="row">AlsoMelon<a href="#">收起</a></span>
+                <div class="forth"><span class="row">YellowMelon<a href="#">收起</a></span></div>
+                <div class="forth"><span class="row">EastMelon<a href="#">收起</a></span></div>
+                <div class="forth"><span class="row">WoodMelon<a href="#">收起</a></span></div>
+            </div>
+            <div class="third"><span class="row">Tomato<a href="#">收起</a></span>
+                <div class="forth"><span class="row">Garlic<a href="#">收起</a></span>
+                    <div class="fifth"><span class="row">Ginger<a href="#">收起</a></span></div>
+                </div>
+                <div class="forth"><span class="row">GreenLeaves<a href="#">收起</a></span></div>
+            </div>
+        </div>
+        <div class="second"><span class="row">Potato<a href="#">收起</a></span></div>
+    </div>
+</div>
+</body>
+</html>
